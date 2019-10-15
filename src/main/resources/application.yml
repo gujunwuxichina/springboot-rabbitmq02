@@ -1,0 +1,18 @@
+server:
+  port: 8092
+spring:
+  #给项目来个名字
+  application:
+    name: springboot-rabbitmq02
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #如下，自定义配置项（队列名称）
+    queue:
+      testDirectQueue: test-direct-queue
+    #虚拟host 可以不设置,使用server默认host
+#    virtual-host: JCcccHost
+
